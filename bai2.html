@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuyển Sinh 2026 - Khoa CNTT Đại Học Đại Nam</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0b1936;
+      }
+      .gradient-glow {
+        background: linear-gradient(135deg, #11254c 0%, #081226 100%);
+      }
+    </style>
+  </head>
+  <body
+    class="text-white min-h-screen p-4 md:p-6 flex flex-col justify-between max-w-6xl mx-auto space-y-8 animate-fade-in"
+  >
+    <header class="text-center my-4 space-y-3">
+      <div
+        class="inline-block bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider mb-2"
+      >
+        <i class="fas fa-fire-alt mr-1"></i> Cổng tuyển sinh đang mở
+      </div>
+      <h1
+        class="text-3xl md:text-5xl font-extrabold uppercase tracking-wide text-[#ffcc00] drop-shadow-md"
+      >
+        Đào Tạo Các Chuyên Ngành <span class="text-white">2026</span>
+      </h1>
+      <p
+        class="text-base md:text-xl font-semibold uppercase tracking-wider text-gray-200"
+      >
+        Khoa Công Nghệ Thông Tin - Trường Đại Học Đại Nam
+      </p>
+
+      <div
+        class="flex justify-center items-center gap-2 mt-4 text-xs md:text-sm bg-[#11254c]/80 max-w-md mx-auto py-2 px-4 rounded-full border border-blue-900/40"
+      >
+        <span class="text-gray-400">Hạn nộp hồ sơ đợt 1 còn:</span>
+        <span id="countdown" class="font-mono font-bold text-rose-400"
+          >30 ngày 12 giờ</span
+        >
+      </div>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+      <div class="lg:col-span-2 space-y-6 flex flex-col justify-between">
+        <section
+          class="bg-[#11254c] border border-blue-900/50 rounded-xl p-6 relative shadow-xl pt-12 flex-1"
+        >
+          <div
+            class="absolute -top-3 left-6 bg-[#e11d48] px-4 py-1.5 rounded-md font-bold flex items-center gap-2 text-xs md:text-sm uppercase shadow-md"
+          >
+            <i class="fas fa-desktop"></i> 1. Công nghệ thông tin
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center h-full"
+          >
+            <div
+              class="relative rounded-lg overflow-hidden aspect-video sm:aspect-square shadow-lg group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80"
+                alt="Sinh viên thực hành CNTT"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3"
+              >
+                <span class="text-xs text-gray-200 italic"
+                  >Môi trường học tập chuẩn quốc tế</span
+                >
+              </div>
+            </div>
+
+            <div class="space-y-4 text-sm md:text-base font-medium pl-2">
+              <div
+                class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-950/50 transition cursor-pointer group"
+              >
+                <i
+                  class="fas fa-cog text-gray-400 group-hover:rotate-45 transition"
+                ></i>
+                <span>Hệ thống nhúng</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-950/50 transition cursor-pointer group"
+              >
+                <i class="fas fa-laptop-code text-cyan-400"></i>
+                <span>Phát triển phần mềm</span>
+              </div>
+              <div
+                class="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-950/50 transition cursor-pointer group"
+              >
+                <i class="fas fa-robot text-pink-400"></i>
+                <span>Robot và trí tuệ nhân tạo (AI)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <section
+            class="bg-[#11254c] border border-blue-900/50 rounded-xl p-6 pt-10 relative shadow-xl min-h-[140px] overflow-hidden flex flex-col justify-center"
+          >
+            <div
+              class="absolute -top-3 left-6 bg-[#cc1f1f] px-4 py-1.5 rounded-md font-bold flex items-center gap-2 text-xs md:text-sm uppercase shadow-md"
+            >
+              <i class="fas fa-cloud"></i> 2. Hệ thống thông tin
+            </div>
+            <div class="absolute inset-0 opacity-15">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80"
+                class="w-full h-full object-cover"
+                alt="Hệ thống thông tin"
+              />
+            </div>
+            <div
+              class="flex justify-around items-center text-3xl text-gray-400 relative z-10 bg-[#11254c]/70 py-3 rounded-lg backdrop-blur-xs"
+            >
+              <i
+                class="fas fa-cloud-bolt text-purple-400 hover:scale-110 transition"
+              ></i>
+              <i
+                class="fas fa-server text-indigo-400 hover:scale-110 transition"
+              ></i>
+              <i
+                class="fas fa-network-wired text-amber-500 hover:scale-110 transition"
+              ></i>
+            </div>
+          </section>
+
+          <section
+            class="bg-[#11254c] border border-blue-900/50 rounded-xl p-6 pt-10 relative shadow-xl min-h-[140px] flex flex-col justify-center"
+          >
+            <div
+              class="absolute -top-3 left-6 bg-[#e11d48] px-4 py-1.5 rounded-md font-bold flex items-center gap-2 text-xs md:text-sm uppercase shadow-md"
+            >
+              <i class="fas fa-brain"></i> 3. Khoa học máy tính
+            </div>
+            <div class="grid grid-cols-2 gap-2 text-center">
+              <div
+                class="flex flex-col items-center gap-1.5 cursor-pointer group bg-blue-950/30 p-2 rounded-lg hover:bg-blue-950/80 transition"
+              >
+                <i
+                  class="fas fa-chart-bar text-emerald-400 text-xl group-hover:scale-110 transition"
+                ></i>
+                <span class="text-xs font-semibold">Khoa học dữ liệu</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-1.5 cursor-pointer group bg-blue-950/30 p-2 rounded-lg hover:bg-blue-950/80 transition"
+              >
+                <i
+                  class="fas fa-microchip text-cyan-400 text-xl group-hover:scale-110 transition"
+                ></i>
+                <span class="text-xs font-semibold">Trí tuệ nhân tạo</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section
+        class="bg-gradient-to-b from-[#163066] to-[#11254c] border-2 border-amber-500/40 rounded-xl p-6 relative shadow-2xl flex flex-col justify-between"
+      >
+        <div>
+          <h3
+            class="text-lg font-bold text-[#ffcc00] uppercase tracking-wide flex items-center gap-2 mb-2"
+          >
+            <i class="fas fa-edit"></i> Đăng ký xét tuyển nhanh
+          </h3>
+          <p class="text-xs text-gray-300 mb-4">
+            Để lại thông tin, ban tư vấn tuyển sinh DNU sẽ liên hệ hỗ trợ bạn
+            ngay trong 24h.
+          </p>
+
+          <form
+            id="regForm"
+            onsubmit="handleFormSubmit(event)"
+            class="space-y-3.5 text-black"
+          >
+            <input
+              type="text"
+              placeholder="Họ và tên thí sinh"
+              required
+              class="w-full px-3 py-2 text-sm bg-white rounded-md focus:outline-hidden focus:ring-2 focus:ring-amber-500 font-medium"
+            />
+            <input
+              type="tel"
+              placeholder="Số điện thoại"
+              required
+              class="w-full px-3 py-2 text-sm bg-white rounded-md focus:outline-hidden focus:ring-2 focus:ring-amber-500 font-medium"
+            />
+            <input
+              type="email"
+              placeholder="Địa chỉ Email"
+              class="w-full px-3 py-2 text-sm bg-white rounded-md focus:outline-hidden focus:ring-2 focus:ring-amber-500 font-medium"
+            />
+
+            <select
+              class="w-full px-3 py-2 text-sm bg-white rounded-md focus:outline-hidden focus:ring-2 focus:ring-amber-500 font-medium text-gray-700"
+            >
+              <option value="" disabled selected>
+                Chọn ngành bạn quan tâm nhất
+              </option>
+              <option value="cntt">1. Công nghệ thông tin</option>
+              <option value="httt">2. Hệ thống thông tin</option>
+              <option value="khmt">3. Khoa học máy tính</option>
+            </select>
+
+            <button
+              type="submit"
+              class="w-full bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold uppercase text-xs tracking-wider py-3 rounded-md shadow-lg transition duration-200 transform active:scale-98 cursor-pointer mt-2"
+            >
+              Gửi hồ sơ ngay <i class="fas fa-paper-plane ml-1"></i>
+            </button>
+          </form>
+        </div>
+
+        <div
+          class="mt-4 pt-4 border-t border-blue-900/50 grid grid-cols-2 gap-2 text-center text-xs"
+        >
+          <a
+            href="tel:0981595599"
+            class="bg-blue-950/50 p-2 rounded-md text-gray-300 hover:text-white transition"
+          >
+            <i class="fas fa-phone-alt text-amber-400 mr-1"></i> Gọi tư vấn
+          </a>
+          <a
+            href="#"
+            onclick="
+              alert('Tính năng Chat đang được kết nối với Fanpage Khoa!')
+            "
+            class="bg-blue-950/50 p-2 rounded-md text-gray-300 hover:text-white transition"
+          >
+            <i class="fab fa-facebook-messenger text-cyan-400 mr-1"></i> Chat
+            Messenger
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs uppercase font-bold tracking-wider"
+    >
+      <div
+        class="bg-[#11254c]/60 border border-blue-900/40 rounded-lg p-3.5 flex items-center justify-center gap-3 text-center hover:bg-[#11254c]/90 transition"
+      >
+        <i class="fas fa-graduation-cap text-[#ffcc00] text-base"></i>
+        <span>Chương trình đào tạo thực tiễn</span>
+      </div>
+      <div
+        class="bg-[#11254c]/60 border border-blue-900/40 rounded-lg p-3.5 flex items-center justify-center gap-3 text-center hover:bg-[#11254c]/90 transition"
+      >
+        <i class="fas fa-heart text-[#ffcc00] text-base"></i>
+        <span>Cơ hội thực tập doanh nghiệp rộng mở</span>
+      </div>
+      <div
+        class="bg-[#11254c]/60 border border-blue-900/40 rounded-lg p-3.5 flex items-center justify-center gap-3 text-center hover:bg-[#11254c]/90 transition"
+      >
+        <i class="fas fa-globe text-cyan-400 text-base"></i>
+        <span>Hệ sinh thái công nghệ đa dạng</span>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#050d21] border border-blue-900/60 rounded-xl p-5 flex flex-col gap-4 text-xs md:text-sm shadow-2xl"
+    >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex flex-col items-center md:items-start">
+          <div class="flex items-center gap-2 text-cyan-400 mb-2 font-medium">
+            <i class="fas fa-globe text-xs"></i> <span>www.dainam.edu.vn</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <img
+              src="https://images.vietnamnet.vn/files/2018/11/17/logo-truong-dai-hoc-dai-nam-170428.jpg"
+              alt="Logo Đại Học Đại Nam"
+              class="h-12 w-auto object-contain rounded-md bg-white p-1 shadow-xs"
+            />
+            <div class="text-left">
+              <div
+                class="text-[#e11d48] font-black text-lg tracking-tighter leading-none"
+              >
+                ĐẠI NAM
+              </div>
+              <div
+                class="text-gray-400 text-[9px] uppercase tracking-widest font-bold"
+              >
+                University
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center md:text-left text-gray-300 max-w-md flex items-start gap-2 justify-center md:justify-start"
+        >
+          <i class="fas fa-map-marker-alt text-[#e11d48] mt-0.5 shrink-0"></i>
+          <p class="leading-relaxed">
+            Văn phòng Khoa CNTT, Phòng 305, Tòa nhà Central Building,<br />
+            <span class="font-semibold text-white">Trường Đại học Đại Nam</span>
+          </p>
+        </div>
+
+        <div
+          class="border border-blue-800/80 px-4 py-2 rounded-md bg-[#11254c]/30 flex items-center gap-2"
+        >
+          <i class="fas fa-phone-alt text-[#e11d48]"></i>
+          <span class="text-gray-400 font-medium">Hotline:</span>
+          <span class="font-bold text-white tracking-wide text-sm"
+            >0981 595 599</span
+          >
+        </div>
+      </div>
+
+      <div class="border-t border-blue-900/50 pt-3 text-center">
+        <p
+          class="text-[11px] md:text-xs font-bold tracking-widest uppercase text-cyan-400/90 italic"
+        >
+          Học Để Thay Đổi
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // 1. Xử lý Countdown tự động (Ví dụ đếm ngược 30 ngày)
+      let duration = 30 * 24 * 60 * 60;
+      const countdownEl = document.getElementById("countdown");
+      setInterval(() => {
+        if (duration <= 0) return;
+        duration--;
+        const days = Math.floor(duration / (24 * 3600));
+        const hours = Math.floor((duration % (24 * 3600)) / 3600);
+        const mins = Math.floor((duration % 3600) / 60);
+        countdownEl.innerText = `${days} ngày ${hours} giờ ${mins} phút`;
+      }, 1000);
+
+      // 2. Thông báo khi nộp form đăng ký thành công
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        alert(
+          "🎉 Chúc mừng bạn đã đăng ký xét tuyển thành công! Ban tư vấn tuyển sinh Khoa CNTT - Đại học Đại Nam sẽ liên hệ với bạn trong thời gian sớm nhất.",
+        );
+        document.getElementById("regForm").reset();
+      }
+    </script>
+  </body>
+</html>
